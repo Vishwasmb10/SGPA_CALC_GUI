@@ -202,7 +202,7 @@ def Calculator(n,land):
         else:
             creds_widgets[i].grid(row=j, column=3)
             labels[i].grid(row=j,column=2)
-            labels[i].configure(text=f"Subject {i+1}:",font=("Digital-7",26))
+            labels[i].configure(text=f"Subject {i+1}:",font=("Digital-7",26),text_color="white")
             j+=1
         creds_widgets[i].configure(corner_radius=15, fg_color="gray12", width=200, height=40, border_color="white", justify=CENTER, font=("Digital-7", 26),border_width=1)
 
