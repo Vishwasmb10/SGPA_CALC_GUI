@@ -198,7 +198,7 @@ def Calculator(n,land):
         if i%2==0:
             creds_widgets[i].grid(row=j, column=1)
             labels[i].grid(row=j,column=0)
-            labels[i].configure(text=f"Subject {i+1}:",font=("Digital-7",26))
+            labels[i].configure(text=f"Subject {i+1}:",font=("Digital-7",26),text_color="white")
         else:
             creds_widgets[i].grid(row=j, column=3)
             labels[i].grid(row=j,column=2)
@@ -239,7 +239,7 @@ def Calculator(n,land):
             labels2[i].grid(row=j, column=2)
             j+=1
         grads_widgets[i].configure(corner_radius=15, fg_color="gray12", width=200, height=40, border_color="white", justify='center',font=("Digital-7",26),border_width=1)
-        labels2[i].configure(text=f"Subject {i + 1}:", font=("Digital-7", 26))
+        labels2[i].configure(text=f"Subject {i + 1}:", font=("Digital-7", 26),text_color="white")
 
     error_grads=CTkLabel(grad_frm,text="Please enter positive integers lesser than or equal to 10",text_color="black",font=("Dot Matrix",22))
     error_grads.grid(row=end,column=0,columnspan=4,sticky="nsew")
