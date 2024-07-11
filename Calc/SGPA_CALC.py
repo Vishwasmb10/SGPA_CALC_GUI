@@ -206,7 +206,7 @@ def Calculator(n,land):
             j+=1
         creds_widgets[i].configure(corner_radius=15, fg_color="gray12", width=200, height=40, border_color="white", justify=CENTER, font=("Digital-7", 26),border_width=1)
 
-    error_creds=CTkLabel(cred_frm,text="Please enter positive integers",text_color="black",font=("Dot Matrix",22))
+    error_creds=CTkLabel(cred_frm,text="Please enter positive integers in all the fields",text_color="black",font=("Dot Matrix",22))
     error_creds.grid(row=end,column=0,columnspan=4,sticky="nsew")
 
     # Grade frame grid config
